@@ -27,30 +27,54 @@ classes: wide
 ### 기본 자료형(primitive data types)
 > data type: 파이썬이 처리할 수 있는 데이터 유형
 
-| syntax | description | testtext |
-| asdfas |  asdfasdf   |  asdfasd |
-
-
-```json
-  {
-  "fistName": Jojhm
-  "asdfasd"
-  "asdf"
-  }
-```
-
-
+### 컴퓨터의 반올림 오차
 
 {% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
+>>> c=38.8
+>>> print(c)
+38.8
+>>> c
+38.799999999999997 #????
 {% endhighlight %}
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+0.1을 이진수 변환해보면, 0.00011001100110011...... 이 된다.
+> 단순한 실수도 이진수로 변환하면 <span style="color:#3BA820">무한소수</span>가 된다.
+> 반올림 오차는 충분히 작아 반올림을 하여 일반적으로 문제가 되지 않는다.
 
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+### Python 리스트만의 특징
+- 다양한 Data Type가 하나의 List에 들어간다!
+{% highlight ruby %}
+>>> a=["color", 1, 0.2]
+>>> color = ['yellow', 'blue', 'green']
+>>> a[0] = color
+>>> print(a)
+[['yellow', 'blue', 'green'], 1, 0.2]]
+{% endhighlight %}
+
+### 리스트 메모리 저장 방식
+
+- 파이썬은 해당 리스트 변수에는 리스트의 주소값이 저장된다.
+{% highlight ruby %}
+>>>a =[5,4,3,2,1]
+>>>b =[1,2,3,4,5]
+>>>b =a
+>>>print(b)
+[5,4,3,2,1]
+>>>a.sort()
+>>>print(b)
+[1,2,3,4,5]
+>>>b =[6,7,8,9,10]
+>>>print(a,b)
+[1,2,3,4,5][6,7,8,9,10]
+{% endhighlight %}
+
+### 패킹과 언패킹
+
+-패킹: 한 변수에 여러 개의 데이터를 넣는 것
+-언패킹: 한 변수의 데이터를 각각의 변수로 반환
+{% highlight ruby %}
+>>>t =[1,2,3]
+>>>a ,b ,c =t
+>>>print(t,a,b,c)
+[1,2,3] 1 2 3
+{% endhighlight %}

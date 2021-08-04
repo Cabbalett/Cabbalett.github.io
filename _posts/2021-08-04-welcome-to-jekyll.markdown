@@ -1,7 +1,7 @@
 ---
 title:  "[Boostcamp AI Tech/Day1]"
 date:   2021-08-04 00:08:22 +0900
-categories: Daily Report
+categories: Daily_Report
 ---
 # Variable & Memory
 ## Variable

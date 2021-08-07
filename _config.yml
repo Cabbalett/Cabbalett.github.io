@@ -103,7 +103,7 @@ analytics:
 author:
   name             : "박재현"
   avatar           : "/assets/bio-image.jpg"
-  bio              : "I am an **amazing** person."
+  bio              : #"I am an **amazing** person."
   location         : "Somewhere"
   email            : "jhpark00813@gmail.com"
   links:
@@ -190,7 +190,6 @@ markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
 # Conversion
 markdown: kramdown
-remote_theme: mmistakes/minimal-mistakes
 highlighter: rouge
 lsi: false
 excerpt_separator: "\n\n"

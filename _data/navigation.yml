@@ -10,3 +10,9 @@
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
+  docs:
+  - title: Weekly Report
+    children:
+      - title: "Week1"
+        url: /categories/Week1/
+

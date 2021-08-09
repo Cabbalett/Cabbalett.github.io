@@ -3,7 +3,8 @@ title: "Weekly Report"
 layout: archive
 permalink: categories/Week1
 author_profile: true
-sidebar_main: true
+sidebar:
+  nav: docs
 ---
 
 

@@ -15,4 +15,6 @@
     children:
       - title: "Week1"
         url: /categories/Week1/
+      - title: "Week2"
+        url: /categories/Week2/
 

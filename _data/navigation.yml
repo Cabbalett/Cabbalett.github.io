@@ -19,4 +19,15 @@
         url: /categories/Week2/
   - title: Data Visualization
     url: /categories/Data-Visualization/
+  - title: Weekly Report
+    children:
+  - title: Deep Learning
+    children:
+      - title: "CNN"
+        url: /tags/CNN/
+      - title: "Optimization"
+        url: /tags/Optimization/
+      - title: "Neural Network"
+        url: /tags/Neural-Network/
+
 

@@ -19,8 +19,6 @@
         url: /categories/Week2/
   - title: Data Visualization
     url: /categories/Data-Visualization/
-  - title: Weekly Report
-    children:
   - title: Deep Learning
     children:
       - title: "Neural Network"

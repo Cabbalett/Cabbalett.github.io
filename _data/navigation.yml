@@ -23,11 +23,13 @@
     children:
   - title: Deep Learning
     children:
-      - title: "CNN"
-        url: /tags/CNN/
-      - title: "Optimization"
-        url: /tags/Optimization/
       - title: "Neural Network"
         url: /tags/Neural-Network/
+      - title: "Optimization"
+        url: /tags/Optimization/
+      - title: "CNN"
+        url: /tags/CNN/
+      
+      
 
 

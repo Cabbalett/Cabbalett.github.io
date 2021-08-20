@@ -16,11 +16,11 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Boostcamp AI Tech"
+title                    : "Learning Deep"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "박재현"
-description              : "An amazing website."
+description              : #":blush:"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "Cabbalett/Cabbalett"
@@ -28,7 +28,7 @@ teaser                   : # path of fallback teaser image, e.g. "/assets/images
 logo                     : #"/assets/bio-image.jpg"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
-words_per_minute         : 200
+words_per_minute         : 50
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
   disqus:
@@ -103,10 +103,10 @@ analytics:
 author:
   name             : "박재현"
   avatar           : "/assets/bio-image.jpg"
-  bio              : #"I am an **amazing** person."
-  #location         : "Somewhere"
+  bio              : "Learning Deep :blush:"
+  location         : "Yuseong, Daejeon"
   email            : "jhpark00813@gmail.com"
-  #links:
+  links:
   #  - label: "Email"
   #    icon: "fas fa-fw fa-envelope-square"
   #    url: "jhpark00813@gmail.com"
@@ -122,9 +122,9 @@ author:
   #  - label: "GitHub"
   #    icon: "fab fa-fw fa-github"
   #    url: "https://github.com/"
-  #  - label: "Instagram"
-  #    icon: "fab fa-fw fa-instagram"
-  #    url: "https://instagram.com/"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://www.instagram.com/p_reenact/"
 
 
 # Site Footer
@@ -228,6 +228,7 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+  - jemoji
 
 # mimic GitHub Pages with --safe
 whitelist:

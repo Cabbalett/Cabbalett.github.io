@@ -11,7 +11,7 @@
   # - title: "Sitemap"
   #   url: /sitemap/
   docs:
-  - title: Weekly Report
+  - title: <font color=color_theme>Weekly Report</font>
     children:
       - title: "Week1"
         url: /categories/Week1/

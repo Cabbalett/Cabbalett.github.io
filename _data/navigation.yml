@@ -11,15 +11,11 @@
   # - title: "Sitemap"
   #   url: /sitemap/
   docs:
-  - title: <font color=color_theme>Weekly Report</font>
-    children:
-      - title: "Week1"
-        url: /categories/Week1/
-      - title: "Week2"
-        url: /categories/Week2/
-  - title: Data Visualization
+  - title: <span style="color:#5e9498">Data Visualization</span>
     url: /categories/Data-Visualization/
-  - title: Deep Learning
+  - title: <span style="color:#5e9498">PyTorch</span>
+    url: /tags/PyTorch/
+  - title: <span style="color:#5e9498">Deep Learning</span>
     children:
       - title: "Neural Network"
         url: /tags/Neural-Network/
@@ -33,6 +29,13 @@
         url: /tags/Transformer/
       - title: "Generative Model"
         url: /tags/Generative-Model/
+  
+  - title: <span style="color:#5e9498">Weekly Report</span>
+    children:
+      - title: "Week1"
+        url: /categories/Week1/
+      - title: "Week2"
+        url: /categories/Week2/
       
       
 

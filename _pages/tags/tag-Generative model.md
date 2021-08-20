@@ -6,5 +6,5 @@ author_profile: true
 sidebar:
   nav: docs
 ---
-{% assign posts = site.tags.['Generative Model']%}
+{% assign posts = site.tags['Generative Model']%}
 {% for post in posts %} {% include archive-single.html type=page.entries_layout %} {% endfor %}

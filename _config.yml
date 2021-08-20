@@ -102,8 +102,8 @@ analytics:
 # Site Author
 author:
   name             : "박재현"
-  avatar           : "/assets/bio-image.jpg"
-  bio              : "Learning Deep :blush:"
+  avatar           : "/assets/bio-image1.jpg"
+  bio              : "인공지능 공부 블로그 :file_folder:"
   location         : "Yuseong, Daejeon"
   email            : "jhpark00813@gmail.com"
   links:

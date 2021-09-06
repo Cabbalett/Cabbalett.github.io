@@ -29,6 +29,10 @@
         url: /tags/Transformer/
       - title: "Generative Model"
         url: /tags/Generative-Model/
+  - title: <span style="color:#5e9498">Computer Vision</span>
+    children:
+      - title: "Image Classification"
+        url: /tags/Image-Classification/
   
   - title: <span style="color:#5e9498">Weekly Report</span>
     children:
@@ -38,6 +42,10 @@
         url: /categories/Week2/
       - title: "Week3"
         url: /categories/Week3/
+      - title: "Week4"
+        url: /categories/Week4/
+      - title: "Week6"
+        url: /categories/Week6/
       
       
 

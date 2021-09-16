@@ -1,7 +1,7 @@
 ---
 title: "Data Visualization"
 layout: archive
-permalink: /categories/#data-visualization/
+permalink: /categories/Data-Visualization/
 author_profile: true
 sidebar:
   nav: docs

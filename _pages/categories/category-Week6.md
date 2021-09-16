@@ -1,7 +1,7 @@
 ---
 title: "Weekly Report"
 layout: archive
-permalink: /categories/Week6/
+permalink: /categories/#week6/
 author_profile: true
 sidebar:
   nav: docs

@@ -18,36 +18,36 @@
   - title: <span style="color:#5e9498">Deep Learning</span>
     children:
       - title: "Neural Network"
-        url: /tags/Neural-Network/
+        url: /tags/#neural-network/
       - title: "Optimization"
-        url: /tags/Optimization/
+        url: /tags/#optimization/
       - title: "CNN"
-        url: /tags/CNN/
+        url: /tags/#cnn/
       - title: "RNN"
-        url: /tags/RNN/
+        url: /tags/#rnn/
       - title: "Transformer"
-        url: /tags/Transformer/
+        url: /tags/#transformer/
       - title: "Generative Model"
-        url: /tags/Generative-Model/
+        url: /tags/#generative-model/
   - title: <span style="color:#5e9498">Computer Vision</span>
     children:
       - title: "Image Classification"
-        url: /tags/Image-Classification/
+        url: /tags/#image-classification/
   
   - title: <span style="color:#5e9498">Weekly Report</span>
     children:
       - title: "Week1"
-        url: /categories/Week1/
+        url: /categories/#week1/
       - title: "Week2"
-        url: /categories/Week2/
+        url: /categories/#week2/
       - title: "Week3"
-        url: /categories/Week3/
+        url: /categories/#week3/
       - title: "Week4"
-        url: /categories/Week4/
+        url: /categories/#week4/
       - title: "Week6"
-        url: /categories/Week6/
-      - title: "Week7"
-        url: /categories/Week7/
+        url: /categories/#week6/
+      - title: "Week7"#
+        url: /categories/#week7/
       
       
 

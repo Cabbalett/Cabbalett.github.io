@@ -33,6 +33,8 @@
     children:
       - title: "Image Classification"
         url: /tags/Image-Classification/
+      - title: "Object Detection"
+        url: /tags/Object-Detection
   
   - title: <span style="color:#5e9498">Weekly Report</span>
     children:

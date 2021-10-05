@@ -1,5 +1,5 @@
 ---
-title: "Optimization"
+title: "Object Detection"
 layout: archive
 permalink: /tags/Object-Detection/
 author_profile: true

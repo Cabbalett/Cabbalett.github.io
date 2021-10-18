@@ -34,8 +34,9 @@
       - title: "Image Classification"
         url: /tags/Image-Classification/
       - title: "Object Detection"
-        url: /tags/Object-Detection
-  
+        url: /tags/Object-Detection/
+      - title: "Semantic Segmentation"
+        url: /tags/Semantic-Segmentation/
   - title: <span style="color:#5e9498">Weekly Report</span>
     children:
       - title: "Week1"
@@ -54,7 +55,8 @@
         url: /categories/Week9/
       - title: "Week10"
         url: /categories/Week10/
-      
+      - title: "Week11"
+        url: /categories/Week11/
       
 
 

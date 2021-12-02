@@ -38,6 +38,10 @@
       - title: "Semantic Segmentation"
         url: /tags/Semantic-Segmentation/
   - title: <span style="color:#5e9498">Weekly Report</span>
+  - title: <span style="color:#5e9498">Model Optimization</span>
+    children:
+      - title: "Pruning"
+        url: /tags/Pruning/
     children:
       - title: "Week1"
         url: /categories/Week1/

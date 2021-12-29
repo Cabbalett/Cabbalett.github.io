@@ -37,6 +37,8 @@
         url: /tags/Object-Detection/
       - title: "Semantic Segmentation"
         url: /tags/Semantic-Segmentation/
+  - title: <span style="color:#5e9498">Natural Language Processing</span>
+    url: /tags/NLP/
   - title: <span style="color:#5e9498">Model Optimization</span>
     children:
       - title: "Pruning"

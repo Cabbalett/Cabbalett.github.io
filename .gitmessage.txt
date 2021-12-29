@@ -1,0 +1,31 @@
+################################
+# Type: subject
+################################
+# Feat : a new feature
+# Fix : a bug fix
+# Design : changes of UI (e.g. CSS)
+# Style : formatting, missing semi-colons, etc; no code changes
+# Refactor : refactor production code
+# Comment : adding or modifying comments
+# Docs : changes of documentations
+# Test : adding tests,
+#        refactoring test codes; no production code changes
+# Rename : rename, move files or directories
+# Remove : delete files or directories
+# Create : create, upload new files or new directories
+##################################
+
+
+##################################
+# body
+##################################
+
+
+##################################
+# footer
+##################################
+# Fixes : fixing issues (not resolved yet)
+# Resolves : resolve issues
+# Related to : issues related to this commit
+#        (not resolved yet)
+##################################

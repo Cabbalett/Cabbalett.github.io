@@ -77,6 +77,7 @@ $$P(d \mid c) \mathrm{P}(c)=P\left(w_{1}, w_{2}, \ldots, w_{n} \mid c\right) \ma
 어떤 문서가 등장하기 이전에, 각 class가 등장할 수 있는 확률은 다음과 같다.
 
 $$P(c_{CV})=\frac{2}{4}=\frac{1}{2}$$
+
 $$P(c_{NLP})=\frac{2}{4}=\frac{1}{2}$$
 
 Test 문장의 단어 $w_i$의 class $c$에 대한 conditional probability를 각각 계산을 하면 다음과 같다.

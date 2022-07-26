@@ -12,7 +12,7 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 color_theme              : #5e9498
 # Site Settings
 locale                   : "en-US"
@@ -41,7 +41,7 @@ comments:
     num_posts            : # 5 (default)
     colorscheme          : # "light" (default), "dark"
   utterances:
-    theme                : "github-dark" # "github-light" (default), "github-dark"
+    theme                : "github-light" # "github-light" (default), "github-dark"
     issue_term           : # "pathname" (default)
   giscus:
     repo_id              : # Shown during giscus setup at https://giscus.app
@@ -103,13 +103,16 @@ analytics:
 author:
   name             : "박재현"
   avatar           : "/assets/bio-image1.jpg"
-  bio              : "인공지능 공부 블로그 :file_folder:"
+  bio              : "KAIST 18 :file_folder:"
   location         : "Yuseong, Daejeon"
   email            : "jhpark00813@gmail.com"
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://www.github.com/Cabbalett"
+    - label: "Bio"
+      icon: "fas fa-fw fa-link"
+      url: /bio
   #  - label: "Email"
   #    icon: "fas fa-fw fa-envelope-square"
   #    url: "jhpark00813@gmail.com"

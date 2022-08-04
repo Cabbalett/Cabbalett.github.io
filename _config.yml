@@ -295,3 +295,218 @@ defaults:
       related: true
       sidebar:
         nav: "docs"
+
+# Site
+# repository: Git repository where your resume will be hosted, only required if you are hosting on GitHub (eg. sproogen/modern-resume-theme)
+# favicon: Directory of your favicon (eg. images/favicon.ico)(optional)
+
+# Content configuration version
+version: 2
+
+# Personal info
+name: Jaehyun Park
+job_title: KAIST 18 EE/CS student
+email: jhpark813@kaist.ac.kr
+# email_title: Email (Email title override)
+# phone_title: Phone (Phone title override)
+website: https://cabbalett.github.io/
+website_title: Blog
+
+# Dark Mode (true/false/never)
+darkmode: false
+
+# Social links
+# twitter_username: jekyllrb
+github_username:  Cabbalett
+# stackoverflow_username: "00000001"
+# dribbble_username: jekyll
+# facebook_username: jekyll
+# flickr_username: jekyll
+# instagram_username: jekyll
+# linkedin_username: jekyll
+# xing_username: jekyll
+# pinterest_username: jekyll
+# youtube_username: jekyll
+# orcid_username: 0000-0000-0000-0000
+# googlescholar_username: D847cGsAAAAJ
+
+# Additional icon links
+# - title: another link
+#   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&s=brands&m=free)
+#   url: Link url (eg. https://google.com)
+
+# Google Analytics and Tag Manager
+# Using more than one of these may cause issues with reporting
+# gtm: "GTM-0000000"
+# gtag: "UA-00000000-0"
+# google_analytics: "UA-00000000-0"
+
+# About Section
+# about_title: About Me (Use this to override about section title)
+about_profile_image: images/profile.jpg
+about_content: | # this will include new lines to allow paragraphs
+  I am a KAIST 18 student majoring in Electrical Engineering and minoring in Computer Science. 
+  
+  My research interests are in social computing, recommendation systems, graph neural networks.
+
+  I like to understand the task deeply and try to lead a group to make reasonable results.
+content:
+  - title: Projects # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: top
+        border: weak  # Value of `weak` will display a weak border below this item. # Any 
+                      # other value (or no value) means no border will be displayed
+        title: Image Captioning
+        link: https://cabbalett.github.io/Image-Captioning/
+        # link_text: Blog link
+        additional_links:
+          - title:  github link
+            icon: fab fa-github
+            url: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
+        sub_title: >
+          Personal Project
+        description: | # this will include new lines to allow paragraphs
+          Implementation of Show-and-Tell model from scratch. Based from simple RNN and CNN background knowledge, I wanted to take a step further and learn
+          linking the two architecture to develop a model with an interesting task.
+      - layout: top
+        border: weak  # Value of `weak` will display a weak border below this item. # Any 
+                      # other value (or no value) means no border will be displayed
+        title: Channel-wise Pruning
+        link: https://cabbalett.github.io/week17/Week17-1/
+        # link_text: Blog link
+        additional_links:
+          - title:  github link
+            icon: fab fa-github
+            url: https://github.com/Cabbalett/Pruning
+        sub_title: >
+          Personal Project
+        description: | # this will include new lines to allow paragraphs
+          A Project about pruning a VGGNet by structured pruning method.
+      - layout: top
+        border: weak
+        title: Personal Mobility Violation Detection
+        # link_text: Blog link
+        additional_links:
+          - title:  github link
+            icon: fab fa-github
+            url: https://github.com/Cabbalett/final-project-level3-cv-01
+        sub_title: >
+          Team Project@Boostcamp
+        description: | # this will include new lines to allow paragraphs
+          Developing a YOLO based model to detect kickboard user violation, such as no helmet, more than one rider. I was in charge of the YOLO modeling and Exploratory Data Analysis.
+      - layout: top
+        title: Today I Learned
+        link: https://cabbalett.github.io/
+        # link_text: Blog link
+        sub_title: >
+          Personal Blog
+        description: | # this will include new lines to allow paragraphs
+          I try to organize what I've learnt using the Blog. You can check what I have been learning.
+  - title: Experience
+    layout: list
+    content:
+      - layout: left
+        border: weak
+        title: IBS Data Science Group
+        sub_title: Research Intern
+        caption: July 2022 - Present
+        description: | # this will include new lines to allow paragraphs
+          Research on **Technical Progress in Social Activities**. Utilizing meetup.com dataset for longitudinal studies tracing the changes in contents and descriptions of a specific type of social activities driven by technological environment.
+
+          Learned about:
+            - Natural Language Processing: Word2Vec, Topic Modeling, Gensim, nltk
+            - Exploratory Data Analysis
+      - layout: left
+        title: Boostcamp AI Tech
+        sub_title: Student
+        caption: AUG 2021 - DEC 2021
+        description: | # this will include new lines to allow paragraphs
+          I got a chance to study in a coding camp to experience End-to-End AI production process. I was able to learn to define tasks and implement various neural network architectures via <mark>PyTorch</mark>.
+          I participated in image classification, semantic segmentation, object detection, model optimization competitions and develop my knowledge.
+
+          Learned about:
+          - Computer Vision: Image Classification, Object Detection, Semantic Segmentation
+          - Basic NLP: RNN, LSTM/GRU, Transformer
+          - Model Optimization: Model Pruning, AutoML(Optuna), Model Quantization
+          - Data Visualization: Exploratory Data Analysis, Seaborn
+          - Product Serving: FastAPI, Docker, GCP
+
+  - title: Education
+    layout: list
+    content:
+      - layout: top-middle
+        title: KAIST(Korea Advanced Institute of Science & Technology)
+        sub_title: Electrical Engineering / Computer Science
+        caption: MAR 2018 - FEB 2023
+  - title: Courses
+    layout: list
+    content:
+      - layout: top
+        title: Probability and Introductory Random Processes
+        sub_title: Electrical Engineering
+        caption: A+
+        description: | # this will include new lines to allow paragraphs
+          Learned about basics of probability, MLE/MAP estimation, basics of Machine Learning and speech recognition
+      - layout: top
+        title: Database and Big Data Systems
+        sub_title: Electrical Engineering
+        caption: A+
+        description: | # this will include new lines to allow paragraphs
+          Learned about ER Model, Design Theory, <mark>MySQL</mark>
+      - layout: top
+        title: AI Convergence Capstone Design
+        sub_title: Special Topics in Electrical Engineering
+        caption: A+
+        description: | # this will include new lines to allow paragraphs
+          Learned about Self-supervised Learning Tasks, anomaly detection, t-SNE plot. Participated in an internal competition, and got 1st place. I was the moderator of out team activity and organized the experiment schedules and researches.
+
+          <a href="https://dcase.community/challenge2020/task-unsupervised-detection-of-anomalous-sounds-results">Detecting Anomalous Sounds for Machine Condition Monitoring</a>
+
+          Activity of our group project is organized <a href="https://cabbalett.notion.site/EE488-Team-Project-1d2e82952e144465acc7c573d7003477">here</a>.
+      - layout: top
+        title: Machine Learning
+        sub_title: Computer Science
+        caption: A+
+        additional_links:
+          - title:  github link
+            icon: fab fa-github
+            url: https://github.com/Cabbalett/CS376_ImageCaptioningPruning
+        description: | # this will include new lines to allow paragraphs
+          Learned about
+          - Basic Neural Net Models: MLP, CNN, RNN, LSTM, Attention Module
+          - Classic ML Techniques: SVM, Decision Tree, Random Forest, Ensemble, PCA
+
+          Our group project was about Pruning an Image Captioning Model. I was responsible as the leader of the team, and combined my previous projects to make a new topic to do research on.
+  - title: A Little More About Me
+    layout: text
+    content: | # this will include new lines to allow paragraphs
+      I like to go swimming in my free time.
+
+# Footer
+footer_show_references: true
+# references_title: References on request (Override references text)
+
+# Build settings
+# theme: modern-resume-theme (Use this is you are hosting your resume yourself)
+# remote_theme: sproogen/modern-resume-theme (Use this if you are hosting your resume on GitHub)
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# plugins:
+#  - jekyll-seo-tag
+
+exclude : [
+  "Gemfile",
+  "Gemfile.lock",
+  "node_modules",
+  "vendor/bundle/",
+  "vendor/cache/",
+  "vendor/gems/",
+  "vendor/ruby/",
+  "lib/",
+  "scripts/",
+  "docker-compose.yml",
+  ]

@@ -6,5 +6,5 @@ author_profile: true
 sidebar:
   nav: docs
 ---
-{% assign posts = site.tags['Image Classification']%}
+{% assign posts = site.tags['ImageClassification']%}
 {% for post in posts %} {% include archive-single.html type=page.entries_layout %} {% endfor %}

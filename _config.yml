@@ -350,7 +350,7 @@ about_profile_image: images/profile.jpg
 about_content: | # this will include new lines to allow paragraphs
   I am a KAIST 18 student majoring in Electrical Engineering and minoring in Computer Science. 
   
-  My research interests are in social computing, recommendation systems, graph neural networks.
+  My research interests are in social computing, NLP, knowledge graph, recommendation systems, graph neural networks.
 
   I like to understand the task deeply and try to lead a group to make reasonable results.
 content:

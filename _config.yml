@@ -110,15 +110,15 @@ author:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://www.github.com/Cabbalett"
-    - label: "Bio"
-      icon: "fas fa-fw fa-link"
-      url: /bio
+    - label: "CV"
+      icon: "fas fa-paste"
+      url: "https://drive.google.com/file/d/1WEekw65Na1G8_SAFR2B10Oap_keRYC7q/view?usp=sharing"
   #  - label: "Email"
   #    icon: "fas fa-fw fa-envelope-square"
   #    url: "jhpark00813@gmail.com"
-  #  - label: "Website"
-  #    icon: "fas fa-fw fa-link"
-  #    #url: "https://your-website.com"
+    - label: "Bio"
+      icon: "fas fa-fw fa-link"
+      url: /bio
   #  - label: "Twitter"
   #    icon: "fab fa-fw fa-twitter-square"
   #    url: "https://twitter.com/"
@@ -334,7 +334,10 @@ github_username:  Cabbalett
 # - title: another link
 #   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&s=brands&m=free)
 #   url: Link url (eg. https://google.com)
-
+additional_links:
+- title: CV
+  icon: fas fa-paste
+  url: https://drive.google.com/file/d/1WEekw65Na1G8_SAFR2B10Oap_keRYC7q/view?usp=sharing
 # Google Analytics and Tag Manager
 # Using more than one of these may cause issues with reporting
 # gtm: "GTM-0000000"

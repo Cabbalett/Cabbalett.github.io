@@ -29,6 +29,8 @@
         url: /tags/Transformer/
       - title: "Generative Model"
         url: /tags/Generative-Model/
+      - title: "Machine Learning"
+        url: /tags/Machine-Learning/
   - title: <span style="color:#5e9498">Computer Vision</span>
     children:
       - title: "Image Classification"

@@ -263,9 +263,9 @@ $$
 \operatorname{span}\left(\left\{x_{1}, \ldots x_{n}\right\}\right)=\left\{v: v=\sum_{i=1}^{n} \alpha_{i} x_{i}, \quad \alpha_{i} \in \mathbb{R}\right\}
 $$
 
-If $\left(x_{1}, \ldots, x_{n}\right)$ is a set of $n$ linearly independent vectors, where $x_{i} \in \mathbb{R}^{n}$, then $\operatorname{span}\left(\left\{x_{1}, \ldots x_{n}\right\}\right)=\mathbb{R}^{n}$.
+If $\left(x_{1}, \ldots, x_{n}\right)$ is a set of $n$ linearly independent vectors, where $x_{i} \in \mathbb{R}^{n}$, then $\operatorname{span}\left((x_{1}, \ldots x_{n})\right)=\mathbb{R}^{n}$.
 
-The **projection** of a vector $y \in \mathbb{R}^{m}$ onto $\operatorname{span}\left(\left\{x_{1}, \ldots x_{n}\right\}\right)$ is a vector $v \in \operatorname{span}\left(\left\{x_{1}, \ldots x_{n}\right\}\right)$ such that $v$ is as close as possible to $y$ based on the Euclidean norm.
+The **projection** of a vector $y \in \mathbb{R}^{m}$ onto $\operatorname{span}\left((x_{1}, \ldots x_{n})\right)$ is a vector $v \in \operatorname{span}\left((x_{1}, \ldots x_{n})\right)$ such that $v$ is as close as possible to $y$ based on the Euclidean norm.
 
 $$
 \operatorname{Proj}\left(y ;\left\{x_{1}, \ldots x_{n}\right\}\right)=\operatorname{argmin}_{v \in \operatorname{span}\left(\left\{x_{1}, \ldots, x_{n}\right\}\right)}\|y-v\|_{2}
@@ -327,7 +327,8 @@ $$
 - For $A \in \mathbb{R}^{n \times n}$ and $A$ is non-singular, $\mid A^{-1}\mid=1/\mid A\mid$
 - For $A \in \mathbb{R}^{n \times n},\mid A\mid =0$ if and only if $A$ is singular(or non-invertible)
   - If $A$ is singular, then it does not have full rank, making its columns linearly dependent. The set $S$ corresponds to a flat sheet within the $n$-dimensional space, and has zero volume, making the determinant 0.
- q
+
+
 ### Quadratic Forms and Positive Semidefinite Matrices
 
 Given a square matrix $A \in \mathbb{R}^{n \times n}$ and a vector $x \in \mathbb{R}^{n}$, the scalar value $x^{T} A x$ is called a quadratic form.

@@ -11,11 +11,11 @@
   # - title: "Sitemap"
   #   url: /sitemap/
   docs:
-  - title: <span style="color:#5e9498">Data Visualization</span>
+  - title: Data Visualization
     url: /categories/Data-Visualization/
-  - title: <span style="color:#5e9498">PyTorch</span>
+  - title: PyTorch
     url: /tags/PyTorch/
-  - title: <span style="color:#5e9498">Deep Learning</span>
+  - title: Deep Learning
     children:
       - title: "Neural Network"
         url: /tags/Neural-Network/
@@ -31,7 +31,7 @@
         url: /tags/Generative-Model/
       - title: "Machine Learning"
         url: /tags/Machine-Learning/
-  - title: <span style="color:#5e9498">Computer Vision</span>
+  - title: Computer Vision
     children:
       - title: "Image Classification"
         url: /tags/Image-Classification/
@@ -39,9 +39,9 @@
         url: /tags/Object-Detection/
       - title: "Semantic Segmentation"
         url: /tags/Semantic-Segmentation/
-  - title: <span style="color:#5e9498">Natural Language Processing</span>
+  - title: Natural Language Processing
     url: /tags/NLP/
-  - title: <span style="color:#5e9498">Model Optimization</span>
+  - title: Model Optimization
     children:
       - title: "Pruning"
         url: /tags/Pruning/

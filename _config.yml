@@ -337,7 +337,7 @@ github_username:  Cabbalett
 additional_links:
 - title: CV
   icon: fas fa-paste
-  url: https://drive.google.com/file/d/1WEekw65Na1G8_SAFR2B10Oap_keRYC7q/view?usp=sharing
+  url: https://drive.google.com/file/d/1tlYPV01bSXnWgWoATt_vBZx8c2hxpLVY/view?usp=sharing
 # Google Analytics and Tag Manager
 # Using more than one of these may cause issues with reporting
 # gtm: "GTM-0000000"
@@ -442,6 +442,16 @@ content:
         title: KAIST(Korea Advanced Institute of Science & Technology)
         sub_title: Electrical Engineering / Computer Science
         caption: MAR 2018 - FEB 2023
+  - title: Awards
+    layout: list
+    content:
+      - layout: top-middle
+        title: Dean's List
+        sub_title: KAIST
+        description: |
+          Individuals with outstanding academic performance, good conduct and exemplary behavior who have been recommended by the Head of the Department.
+
+          Within top 3% of academic performance.
   - title: Courses
     layout: list
     content:

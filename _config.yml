@@ -341,8 +341,8 @@ additional_links:
 # Google Analytics and Tag Manager
 # Using more than one of these may cause issues with reporting
 # gtm: "GTM-0000000"
-# gtag: "UA-00000000-0"
-google_analytics: "G-SYCG1ELX3E"
+gtag: "G-SYCG1ELX3E"
+# google_analytics: "G-SYCG1ELX3E"
 
 # About Section
 # about_title: About Me (Use this to override about section title)

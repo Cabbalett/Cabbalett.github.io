@@ -3,6 +3,8 @@
         "diagonalizable",
         "eigendecomposition",
         "Nullspace",
+        "overfitting",
+        "Pretraining",
         "Semidefinite"
     ]
 }

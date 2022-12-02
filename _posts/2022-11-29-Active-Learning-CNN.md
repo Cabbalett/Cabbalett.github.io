@@ -136,7 +136,7 @@ They used CIFAR and SVHN as their dataset.
 
 From the results, we can say that the active learning algorithm has a novelty.
 
-### Weakly-supervised Learning
+### Weakly-Supervised Learning
 
 From the results above, we can see that the performance is even better when weakly-supervised learning was performed. The authors say that this is the case since weakly-supervised learning is capable of forming a better-quality feature space, which is highly related to the geometry-based optimization function.
 

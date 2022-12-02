@@ -420,6 +420,9 @@ content:
           Learned about:
             - Natural Language Processing: Word2Vec, Topic Modeling, Gensim, nltk
             - Exploratory Data Analysis
+
+          <a href="https://drive.google.com/file/d/1ABPHR07JeSjnyME7bs80YiBEN8zv9kYW/view?usp=share_link">Paper</a>
+            
       - layout: left
         title: Boostcamp AI Tech
         sub_title: Student
@@ -440,14 +443,19 @@ content:
     content:
       - layout: top-middle
         title: KAIST(Korea Advanced Institute of Science & Technology)
+        sub_title: Computer Science
+        caption: MAR 2023 - Present, Master
+      - layout: top-middle
+        title: KAIST(Korea Advanced Institute of Science & Technology)
         sub_title: Electrical Engineering / Computer Science
-        caption: MAR 2018 - FEB 2023
+        caption: MAR 2018 - FEB 2023, Bachelor
   - title: Awards
     layout: list
     content:
       - layout: top-middle
         title: Dean's List
         sub_title: KAIST
+        caption: 2022 Spring
         description: |
           Individuals with outstanding academic performance, good conduct and exemplary behavior who have been recommended by the Head of the Department.
 

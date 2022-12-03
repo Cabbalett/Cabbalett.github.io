@@ -23,11 +23,11 @@ $$T = \{(D_i^{train}, D_i^{test})\}_{i=1}^I$$
 
 - Training set: each element of training examples can be defined as follows.
 
-$$D^{train} = \{(\boldsymbol{x_t}, y_t)\}_{t=1}^T$$
+$$D^{train} = \{(\textbf{x}_t, y_t)\}_{t=1}^T$$
 
 - Test set: each element of test examples can be defined as follows.
 
-$$D^{test} = \{(\boldsymbol{x_q}, y_q)\}_{q=1}^Q$$
+$$D^{test} = \{(\textbf{x}_q, y_q)\}_{q=1}^Q$$
 
 Each training and test set elements tuple needs to be sampled from the same distribution of the dataset.
 
@@ -39,7 +39,7 @@ unlike using the each episode during training, denying the performance of previo
 
 $$
 \begin{align*}
-D^{new}&=\{(\boldsymbol{x_i},y_i)\}_{k=1}^K\\
+D^{new}&=\{(\textbf{x}_i,y_i)\}_{k=1}^K\\
 &=\cup\{D_1^{train},\cdots, D_I^{train}\}
 \end{align*}
 $$

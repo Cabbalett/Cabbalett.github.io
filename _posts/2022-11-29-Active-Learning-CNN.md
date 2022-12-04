@@ -92,7 +92,7 @@ Following these assumption, we can define the upper bound for the objective func
 
 The image below depicts the concept of our objective function.
 
-<!-- <p style="text-align:center;"><img src="https://user-images.githubusercontent.com/79649470/205305559-fa9f0d24-997d-4a61-bd66-14c6fcc56458.png" width = "60%"></p> -->
+<p style="text-align:center;"><img src="https://user-images.githubusercontent.com/79649470/205305559-fa9f0d24-997d-4a61-bd66-14c6fcc56458.png" width = "60%"></p>
 
 Now we must prove that any loss function from the CNN based model has a Lipschitz-continuity. I still have to fully understand the process of proving the following lemma, but according to the authors, the following lemma is true.
 
@@ -116,7 +116,7 @@ $$
 
 The inner $\min$ operator is to define the nearest center. This algorithm can be executed as a 2-OPT solution using the algorithm below.
 
-<!-- <p style="text-align:center;"><img src="https://user-images.githubusercontent.com/79649470/205307500-8c004753-a837-4791-bf7b-fd6900c7150f.png" width = "40%"></p> -->
+<p style="text-align:center;"><img src="https://user-images.githubusercontent.com/79649470/205307500-8c004753-a837-4791-bf7b-fd6900c7150f.png" width = "40%"></p>
 
 The authors also propose a Mixed integer program(MIP), but I couldn't understand fully how the algorithm works.
 

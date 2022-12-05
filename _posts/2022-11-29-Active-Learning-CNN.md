@@ -76,8 +76,8 @@ I still have to fully understand the proof of the following theorem, therefore w
 
 $$
 \begin{align}
-\left|\frac{1}{n} \sum_{i \in[n]} l\left(\mathbf{x}_i, y_i ; A_{\mathbf{s}}\right)-\frac{1}{|\mathbf{s}|} \sum_{j \in \mathbf{s}} l\left(\mathbf{x}_j, y_j ; A_{\mathbf{s}}\right)\right| &\leq \delta\left(\lambda^l+\lambda^\mu L C\right)+\sqrt{\frac{L^2 \log (1 / \gamma)}{2 n}}\\
-\frac{1}{n} \sum_{i \in[n]} l\left(\mathbf{x}_i, y_i ; A_{\mathbf{s}}\right) &\leq \delta\left(\lambda^l+\lambda^\mu L C\right)+\sqrt{\frac{L^2 \log (1 / \gamma)}{2 n}}
+\left|\frac{1}{n} \sum_{i \in[n]} l\left(\mathbf{x}_i, y_i ; A_{\mathbf{s}}\right)-\frac{1}{|\mathbf{s}|} \sum_{j \in \mathbf{s}} l\left(\mathbf{x}_j, y_j ; A_{\mathbf{s}}\right)\right| &\leq \delta_{\mathbf{s}}\left(\lambda^l+\lambda^\mu L C\right)+\sqrt{\frac{L^2 \log (1 / \gamma)}{2 n}}\\
+\frac{1}{n} \sum_{i \in[n]} l\left(\mathbf{x}_i, y_i ; A_{\mathbf{s}}\right) &\leq \delta_{\mathbf{s}}\left(\lambda^l+\lambda^\mu L C\right)+\sqrt{\frac{L^2 \log (1 / \gamma)}{2 n}}
 \end{align}
 $$
 
@@ -98,7 +98,7 @@ Now we must prove that any loss function from the CNN based model has a Lipschit
 
 *Lemma 1*. Loss function defined as the 2-norm between the class probabilities and the softmax output of a convolutional neural network with $n_c$ convolutional (with max-pool and ReLU) and $n_{f c}$ fully connected layers defined over C classes is $\left(\frac{\sqrt{C-1}}{C} \alpha^{n_c+n_{f c}}\right)$-Lipschitz function of input for fixed class probabilities and network parameters.
 
-Using *Lemma 1*, we justify our upper bound and proceed to even simplify our problem as minimizing the radius.
+Following these analysis, we now know that the term related to the new subset $s^{k+1}$ is $\delta_{\textbf{s}}$. Therefore, the upper objective can be expressed in this final form.
 
 $$
 \min _{\mathbf{s}^{k+1}:\left|\mathbf{s}^{k+1}\right| \leq b}\delta_{\mathbf{s}^0 \cup \ldots \mathbf{s}^{k+1}}
@@ -111,7 +111,7 @@ Which is a equivalent to solving the k-Center problem.
 The informal definition of the k-Center problem applied to our tasks is: to choose $b$ center points that minimizes the largest distance between a data point and its nearest center. The formal definition can be expressed as follows.
 
 $$
-\min _{\mathbf{s}^{k+1}:\left|\mathbf{s}^{k+1}\right| \leq b} \max _i \min _{\mathbf{s}^0 \cup \ldots \mathbf{s}^{k+1}} \Delta\left(\mathbf{x}_i, \mathbf{x}_j\right)
+\min _{\mathbf{s}^{k+1}:\left|\mathbf{s}^{k+1}\right| \leq b} \max _i \min _{j \in \mathbf{s}^0 \cup \ldots \mathbf{s}^{k+1}} \Delta\left(\mathbf{x}_i, \mathbf{x}_j\right)
 $$
 
 The inner $\min$ operator is to define the nearest center. This algorithm can be executed as a 2-OPT solution using the algorithm below.

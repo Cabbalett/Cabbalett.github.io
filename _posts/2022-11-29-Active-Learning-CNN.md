@@ -66,7 +66,7 @@ $$
 \min _{\mathbf{s}^{k+1}:\left|\mathbf{s}^{k+1}\right| \leq b}\left|\frac{1}{n} \sum_{i \in[n]} l\left(\mathbf{x}_i, y_i ; A_{\mathbf{s}^0 \cup \ldots \mathbf{s}^{k+1}}\right)-\frac{1}{\left|{\mathbf{s}^0 \cup \ldots \mathbf{s}^{k+1}}\right|} \sum_{j \in {\mathbf{s}^0 \cup \ldots \mathbf{s}^{k+1}}} l\left(\mathbf{x}_j, y_j ; A_{\mathbf{s}^0 \cup \ldots \mathbf{s}^{k+1}}\right)\right|
 $$
 
-Informally explaining, we are trying to find a subset $\textbf{s}^{k+1}$ when the model trained on it generates the loss closest to the case where the model is trained with all of the dataset(label provided).
+Informally explaining, we are trying to find a subset $\textbf{s}^{k+1}$ that when the model trained on it, the performance of the model on the labelled subset and that on the whole dataset will be as close as possible.
 
 ### Details of the Objective Function
 

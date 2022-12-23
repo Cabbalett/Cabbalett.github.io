@@ -348,7 +348,7 @@ gtag: "G-SYCG1ELX3E"
 # about_title: About Me (Use this to override about section title)
 about_profile_image: images/profile.jpg
 about_content: | # this will include new lines to allow paragraphs
-  I am a KAIST 18 student majoring in Electrical Engineering and minoring in Computer Science. 
+  I am a Master student in KAIST Computer Science, dmlab. 
   
   My research interests are in Big data analysis, Time-series data, ML/AI, social science.
 
@@ -475,6 +475,12 @@ content:
         caption: A+
         description: | # this will include new lines to allow paragraphs
           Learned about ER Model, Design Theory, <mark>MySQL</mark>
+      -layout: top
+        title: Foundation of Big Data Analytics
+        sub_title: Electrical Engineering
+        caption: A+
+        description: |
+          Learned about <mark>Spark</mark>, clustering, dimensionality reduction, recommendation systems, link analysis, data streams, large-scale machine learning, web advertising.
       - layout: top
         title: AI Convergence Capstone Design
         sub_title: Special Topics in Electrical Engineering

@@ -475,7 +475,7 @@ content:
         caption: A+
         description: | # this will include new lines to allow paragraphs
           Learned about ER Model, Design Theory, <mark>MySQL</mark>
-      -layout: top
+      - layout: top
         title: Foundation of Big Data Analytics
         sub_title: Electrical Engineering
         caption: A+

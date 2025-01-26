@@ -1,1 +1,1 @@
-User-agent: * Disallow: Sitemap: https://cabbalett2.github.io/sitemap.xml
+User-agent: * Disallow: Sitemap: https://cabbalett.github.io/sitemap.xml

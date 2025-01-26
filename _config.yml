@@ -149,9 +149,9 @@ collections:
       layout: post
     output: true
     permalink: /:collection/:title/
-  projects:
-    output: false
-    permalink: /:collection/:title/
+  # projects:
+  #   output: false
+  #   permalink: /:collection/:title/
 
 announcements:
   enabled: true
@@ -212,6 +212,11 @@ exclude:
   - _layouts/archive-tag.liquid
   - _layouts/archive-year.liquid
   - _plugins/external-posts.rb
+# projects
+  - _projects/
+  - _pages/projects.md
+  - _includes/projects_horizontal.liquid
+  - _includes/projects.liquid
 
 keep_files:
   - CNAME

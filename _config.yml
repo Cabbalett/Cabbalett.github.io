@@ -206,6 +206,12 @@ exclude:
   - _posts/
   - _pages/blog.md
   - _pages/dropdown.md
+  - _includes/latest_posts.liquid
+  - _includes/related_posts.liquid
+  - _layouts/archive-category.liquid
+  - _layouts/archive-tag.liquid
+  - _layouts/archive-year.liquid
+  - _plugins/external-posts.rb
 
 keep_files:
   - CNAME

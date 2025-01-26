@@ -217,6 +217,9 @@ exclude:
   - _pages/projects.md
   - _includes/projects_horizontal.liquid
   - _includes/projects.liquid
+# repositories
+  - _pages/repositories.md
+  - _includes/repository/
 
 keep_files:
   - CNAME

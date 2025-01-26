@@ -6,10 +6,10 @@
 @use "sass:color";
 
 // Colors
-$red-color: #ff3636 !default;
+$red-color: #EE0137 !default;
 $red-color-dark: #b71c1c !default;
 $orange-color: #f29105 !default;
-$blue-color: #0076df !default;
+$blue-color: #2B6DFF !default;
 $blue-color-dark: #00369f !default;
 $cyan-color: #2698ba !default;
 $light-cyan-color: color.adjust($cyan-color, $lightness: 25%);

@@ -47,7 +47,11 @@
   <!-- Entry bib key -->
   <div id="{{ entry.key }}" class="{% if site.enable_publication_thumbnails %}col-sm-8{% else %}col-sm-10{% endif %}">
     <!-- Title -->
-    <div class="title">{{ entry.title }}</div>
+    {% if entry.url %}
+      <div class="title"><a href="{{entry.url}}">{{ entry.title }}</a></div>
+    {% else %}
+      <div class="title">{{ entry.title }}</div>
+    {% endif %}
     <!-- Author -->
     <div class="author">
       {% assign author_array_size = entry.author_array | size %}
@@ -68,7 +72,7 @@
         {%- endif -%}
         {% assign coauthor_url = null %}
         {%- assign clean_last_name = author_last_name | downcase | remove_accents -%}
-        {% if site.data.coauthors[clean_last_name] %}
+        {% if site.data.coauthors[clean_last_name] %}f
           {%- for coauthor in site.data.coauthors[clean_last_name] -%}
             {% if coauthor.firstname contains author.first %}
               {%- assign coauthor_url = coauthor.url -%}
@@ -82,10 +86,12 @@
           {%- if forloop.last and author_array_limit == author_array_size %}and&nbsp;{% endif -%}
         {% endif %}
         {%- if author_is_self -%}
-          <em>
+          <i>
+          <b>
             {{- author.first }}
             {{ author_last_html -}}
-          </em>
+          </b>
+          </i>
         {%- else -%}
           {%- if coauthor_url -%}
             <a href="{{ coauthor_url }}">

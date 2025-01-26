@@ -220,6 +220,11 @@ exclude:
 # repositories
   - _pages/repositories.md
   - _includes/repository/
+# teaching
+  - _pages/teaching.md
+# people
+  - _pages/profiles.md
+  - _layouts/profiles.md
 
 keep_files:
   - CNAME

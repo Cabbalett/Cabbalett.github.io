@@ -45,20 +45,12 @@
   ],
   "work": [
     {
-      "name": "IBS Data Science Group",
-      "position": "Research Intern",
-      "url": "https://www.ibs.re.kr/eng/sub02_02_02_02.do",
-      "startDate": "2022-07",
-      "endDate": "2022-12",
-      "summary": "Research on Technical Progress in Social Activities. Utilizing meetup.com dataset for longitudinal studies tracing the changes in contents and descriptions of a specific type of social activities driven by technological environment."
-    },
-    {
-      "name": "Boostcamp AI Tech",
-      "position": "Student",
-      "url": "https://boostcamp.connect.or.kr/program_ai.html",
-      "startDate": "2021-08",
-      "endDate": "2021-12",
-      "summary": "Experiencing End-to-End AI production process. Learning to define tasks and implement various neural network architectures via PyTorch. Studying image classification, semantic segmentation, object detection, model optimization, and competitions."
+      "name": "KRAFTON AI",
+      "position": "Intern",
+      "url": "https://www.krafton.ai/ko/",
+      "startDate": "2025-03",
+      "endDate": "2025-08",
+      "summary": "Data-Centric AI Researcher"
     },
     {
       "name": "SK Hynix Information Sensor Technology",
@@ -79,19 +71,19 @@
   ],
   "publications": [
     {
+      "name": "Active Learning for Continual Learning: Keeping the Past Alive in the Present",
+      "publisher": "ICLR",
+      "releaseDate": "2025",
+      "url": "https://openreview.net/forum?id=mnLmmtW7HO",
+      "summary": "<b>J. Park</b>, D. Park, JG. Lee<sup>*</sup>"
+    },
+    {
       "name": "Exploiting Representation Curvature for Boundary Detection in Time Series",
       "summary": "Y. Shin, <b>J. Park</b>, S. Yoon, B. Lee, JG. Lee<sup>*</sup>",
       "publisher": "NeurIPS",
       "releaseDate": "2024",
       "url": "https://openreview.net/forum?id=WK2KxPAMQv"
     },
-    {
-      "name": "Active Learning for Continual Learning: Keeping the Past Alive in the Present",
-      "publisher": "ICLR",
-      "releaseDate": "2025",
-      "url": "https://openreview.net/forum?id=mnLmmtW7HO",
-      "summary": "<b>J. Park</b>, D. Park, JG. Lee<sup>*</sup>"
-    }
   ],
   "languages": [
     {

@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-My paper [Active Learning for Continual Learning: Keeping the Past Alive in the Present](https://openreview.net/forum?id=mnLmmtW7HO) is accepted at ICLR 2025! 🎉🥳
+Our paper [Active Learning for Continual Learning: Keeping the Past Alive in the Present](https://openreview.net/forum?id=mnLmmtW7HO) is accepted at ICLR 2025! 🎉🥳

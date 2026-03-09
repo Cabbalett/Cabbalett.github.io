@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="ArtiAgent: an agentic framework that enables VLMs and diffusion models to comprehend visual artifacts via automated data synthesis. CVPR 2026.">
+  <meta name="keywords" content="ArtiAgent, ArtiBench, visual artifacts, diffusion models, VLMs, agentic AI, CVPR 2026, KAIST, KRAFTON">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="ArtiAgent: See and Fix the Flaws">
+  <meta property="og:description" content="Enabling VLMs and Diffusion Models to Comprehend Visual Artifacts via Agentic Data Synthesis. CVPR 2026.">
+  <meta property="og:image" content="./static/images/figure1.pdf">
+  <title>ArtiAgent — CVPR 2026</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+
+<body>
+
+<!-- ─── Navbar ─────────────────────────────────────────────────────────────── -->
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://cabbalett.github.io" title="Back to homepage">
+        <span class="icon"><i class="fas fa-home"></i></span>
+      </a>
+    </div>
+  </div>
+</nav>
+
+<!-- ─── Hero: Title + Authors + Links ─────────────────────────────────────── -->
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+
+          <!-- Venue badge -->
+          <p style="margin-bottom: 1rem;">
+            <span class="venue-tag">CVPR 2026</span>
+          </p>
+
+          <!-- Title -->
+          <h1 class="title is-2 publication-title">
+            See and Fix the Flaws: Enabling VLMs and Diffusion Models to Comprehend Visual Artifacts via Agentic Data Synthesis
+          </h1>
+
+          <!-- Authors -->
+          <div class="is-size-5 publication-authors" style="margin-top: 1rem;">
+            <span class="author-block">
+              <a href="https://cabbalett.github.io">Jaehyun Park</a><sup>1,*</sup>,
+            </span>
+            <span class="author-block">
+              Minyoung Ahn<sup>2,3,*</sup>,
+            </span>
+            <span class="author-block">
+              Minkyu Kim<sup>3</sup>,
+            </span>
+            <span class="author-block">
+              Jonghyun Lee<sup>3</sup>,
+            </span>
+            <span class="author-block">
+              Jae-Gil Lee<sup>1</sup>,
+            </span>
+            <span class="author-block">
+              Dongmin Park<sup>3,†</sup>
+            </span>
+          </div>
+
+          <!-- Affiliations -->
+          <div class="is-size-5 publication-authors" style="margin-top: 0.4rem;">
+            <span class="author-block"><sup>1</sup>KAIST,&nbsp;</span>
+            <span class="author-block"><sup>2</sup>Seoul National University,&nbsp;</span>
+            <span class="author-block"><sup>3</sup>KRAFTON</span>
+          </div>
+
+          <!-- Notes -->
+          <p class="equal-note" style="margin-top: 0.5rem;">
+            * Equal contribution &nbsp;|&nbsp; † Corresponding author
+          </p>
+
+          <!-- Links -->
+          <div class="column has-text-centered" style="margin-top: 1.5rem;">
+            <div class="publication-links">
+
+              <span class="link-block">
+                <a href="../../assets/pdf/artiagent.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                  <span>Paper</span>
+                </a>
+              </span>
+
+              <span class="link-block">
+                <a href="https://huggingface.co/papers/2602.20951"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="ai ai-arxiv"></i></span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+
+              <span class="link-block">
+                <a href="https://github.com/krafton-ai/ArtiAgent"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="fab fa-github"></i></span>
+                  <span>Code</span>
+                </a>
+              </span>
+
+              <span class="link-block">
+                <a href="https://huggingface.co/datasets/KRAFTON/ArtiBench"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="fas fa-database"></i></span>
+                  <span>Data</span>
+                </a>
+              </span>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── Teaser: Figure 1 ───────────────────────────────────────────────────── -->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <figure class="figure-card">
+        <img src="./static/images/figure1.pdf"
+             alt="Overview of ArtiAgent: challenges and approach"
+             style="width: 100%; display: block;">
+      </figure>
+      <p class="subtitle has-text-centered figure-caption" style="margin-top: 1.25rem; font-size: 1rem;">
+        <strong>Overview of ArtiAgent.</strong>
+        (a) Visual artifacts in state-of-the-art diffusion models; current VLMs (GPT-5, Gemini-2.5-Pro) fail to detect them.
+        (b) Our agentic framework <strong>ArtiAgent</strong>: three coordinated agents synthesize artifact data at scale.
+        (c) VLM-based artifact comprehension: detection, explanation, and localization.
+        (d) Reward-guided artifact-free image generation.
+        (e) Artifact correction via VLM-guided inpainting.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ─── Abstract ──────────────────────────────────────────────────────────── -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Despite recent advances in diffusion models, AI-generated images still often contain
+            <strong>visual artifacts</strong> that compromise realism. Although more thorough
+            pre-training and bigger models might reduce artifacts, there is no assurance that they
+            can be completely eliminated, making artifact mitigation a highly crucial area of study.
+          </p>
+          <p>
+            Previous artifact-aware methodologies depend on human-labeled artifact datasets, which
+            are costly and difficult to scale. We propose <strong>ArtiAgent</strong>, an agentic
+            framework that efficiently creates pairs of real and artifact-injected images without
+            human intervention. It comprises three agents: a <em>perception agent</em> that
+            recognizes and grounds entities and subentities from real images; a <em>synthesis
+            agent</em> that introduces artifacts via novel patch-wise embedding manipulation within
+            a diffusion transformer; and a <em>curation agent</em> that filters synthesized
+            artifacts and generates local and global explanations for each instance.
+          </p>
+          <p>
+            Using ArtiAgent, we synthesize <strong>100K images</strong> with rich artifact
+            annotations and demonstrate both efficacy and versatility across diverse applications,
+            including fine-tuning open-source VLMs that consistently outperform proprietary systems
+            (GPT-5, Gemini-2.5-Pro) on artifact detection, localization, and explanation.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── Method ────────────────────────────────────────────────────────────── -->
+<section class="section section-alt">
+  <div class="container is-max-desktop">
+
+    <h2 class="title is-3 has-text-centered">Method</h2>
+
+    <!-- Method overview figure -->
+    <div class="columns is-centered" style="margin-bottom: 1rem;">
+      <div class="column">
+        <figure class="figure-card">
+          <img src="./static/images/method.pdf"
+               alt="ArtiAgent method overview"
+               style="width: 100%; display: block;">
+        </figure>
+        <p class="has-text-centered figure-caption">
+          <strong>ArtiAgent pipeline.</strong>
+          (a) The <em>perception agent</em> detects entities and subentities using Grounded-SAM.
+          (b) The <em>synthesis agent</em> injects artifacts via patch mapping tools and the
+          inversion-injection paradigm.
+          (c) The <em>curation agent</em> filters low-quality results and generates textual
+          explanations.
+        </p>
+      </div>
+    </div>
+
+    <!-- Three agents -->
+    <h3 class="title is-4" style="margin-top: 3rem;">Three Specialized Agents</h3>
+    <div class="columns" style="margin-bottom: 2rem;">
+
+      <div class="column">
+        <div class="box agent-box perception">
+          <p class="title is-6" style="color: #3273dc; margin-bottom: 0.75rem;">
+            <span class="icon"><i class="fas fa-search"></i></span>&nbsp; Perception Agent
+          </p>
+          <p>
+            Decomposes an input image into a hierarchical vocabulary of
+            <strong>entities</strong> (e.g., dog) and <strong>subentities</strong>
+            (e.g., nose, leg) using out-of-the-box VLMs, then grounds them with
+            <strong>Grounded-SAM</strong> for precise spatial localization.
+          </p>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="box agent-box synthesis">
+          <p class="title is-6" style="color: #c0392b; margin-bottom: 0.75rem;">
+            <span class="icon"><i class="fas fa-tools"></i></span>&nbsp; Synthesis Agent
+          </p>
+          <p>
+            Uses grounding to inject artifacts via a <strong>toolbox</strong> of four
+            tools (<em>add, remove, distort, fuse</em>) and a novel
+            <strong>inversion-injection</strong> module that manipulates patch attention in
+            diffusion transformers to generate realistic structural artifacts.
+          </p>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="box agent-box curation">
+          <p class="title is-6" style="color: #27ae60; margin-bottom: 0.75rem;">
+            <span class="icon"><i class="fas fa-check-circle"></i></span>&nbsp; Curation Agent
+          </p>
+          <p>
+            Performs <strong>data filtering</strong> (LPIPS-based for distortions, VLM-based
+            for structural artifacts) and generates <strong>local and global textual
+            explanations</strong> for each artifact, producing training-ready supervision.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Toolbox -->
+    <h3 class="title is-4" style="margin-top: 2.5rem;">Artifact Injection Toolbox</h3>
+    <div class="columns is-vcentered" style="margin-bottom: 2rem;">
+      <div class="column is-three-fifths">
+        <figure class="figure-card">
+          <img src="./static/images/toolbox.pdf"
+               alt="Artifact injection toolbox visualization"
+               style="width: 100%; display: block;">
+        </figure>
+        <p class="has-text-centered figure-caption">
+          Visualization of each target-reference patch mapping and its resulting artifact.
+        </p>
+      </div>
+      <div class="column">
+        <div class="content">
+          <p>The toolbox provides four patch-mapping tools:</p>
+          <ul>
+            <li>
+              <strong>Add</strong> — Duplicates a peripheral subentity (e.g., adds an extra
+              finger) by mapping original subentity patches to a nearby candidate region.
+            </li>
+            <li>
+              <strong>Remove</strong> — Omits a peripheral subentity by replacing its patches
+              with surrounding background context.
+            </li>
+            <li>
+              <strong>Distort</strong> — Applies transformation kernels (jitter, strip,
+              random permutation) to intermediate subentity patches.
+            </li>
+            <li>
+              <strong>Fuse</strong> — Blends two entity instances by cross-referencing their
+              overlapping patch regions.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Inversion-Injection -->
+    <h3 class="title is-4" style="margin-top: 2.5rem;">Inversion-Injection Module</h3>
+    <div class="columns is-vcentered">
+      <div class="column is-half">
+        <figure class="figure-card">
+          <img src="./static/images/inversion.pdf"
+               alt="Inversion-injection module"
+               style="width: 100%; display: block;">
+        </figure>
+        <p class="has-text-centered figure-caption">
+          Inversion-injection module: the right arm from the reference patches is
+          added to the target patches below it.
+        </p>
+      </div>
+      <div class="column is-half">
+        <div class="content">
+          <p>
+            We extend the inversion-restoration paradigm from image editing into an
+            <strong>inversion-injection</strong> module that manipulates self-attention
+            in diffusion transformers (FLUX.1-dev via FireFlow).
+          </p>
+          <p>Two complementary mechanisms operate on the target patch region:</p>
+          <ul>
+            <li>
+              <strong>PE Injection</strong> — Replaces the rotary positional embeddings of
+              target patches with those of reference patches, controlling <em>where</em>
+              the model believes denoising occurs. This is a novel contribution not
+              previously used in image editing.
+            </li>
+            <li>
+              <strong>Value Injection</strong> — Reuses cached value embeddings from the
+              inversion stage to provide realistic semantic content for the target region.
+            </li>
+          </ul>
+          <p>
+            Their combination produces localized, realistic structural artifacts while
+            keeping the background fully consistent with the original image.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ─── Experiments ───────────────────────────────────────────────────────── -->
+<section class="section section-alt">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Experiments</h2>
+
+    <!-- Summary callout -->
+    <div class="columns is-centered" style="margin-bottom: 3rem;">
+      <div class="column is-four-fifths">
+        <div class="notification is-info is-light" style="border-radius: 10px;">
+          <p class="is-size-5 has-text-centered">
+            Open-source VLMs fine-tuned with <strong>ArtiAgent</strong>-generated data
+            consistently <strong>outperform GPT-5 and Gemini-2.5-Pro</strong> on artifact
+            detection, localization, and explanation — across ArtiBench and three existing
+            benchmarks (RichHF, SynArtifact, LOKI, SynthScars).
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scaling effect -->
+    <h3 class="title is-4">Data Scaling Effect</h3>
+    <div class="columns is-vcentered" style="margin-bottom: 3rem;">
+      <div class="column is-half">
+        <figure class="figure-card">
+          <img src="./static/images/scaling.pdf"
+               alt="Data scaling effect"
+               style="width: 100%; display: block;">
+        </figure>
+        <p class="has-text-centered figure-caption">
+          Scaling effect with Qwen2.5-VL-7B; metrics averaged across all benchmarks per task.
+        </p>
+      </div>
+      <div class="column is-half">
+        <div class="content">
+          <p>
+            Performance grows consistently as training data from ArtiAgent scales up:
+          </p>
+          <ul>
+            <li>
+              With only <strong>1K samples</strong>, localization and explanation already
+              surpass GPT-5 — demonstrating ArtiAgent's <em>sample efficiency</em>.
+            </li>
+            <li>
+              Binary detection continues to improve up to <strong>100K scale</strong>,
+              benefiting from greater artifact diversity.
+            </li>
+            <li>
+              Results highlight ArtiAgent's strong <em>scaling potential</em> and rich
+              supervision quality.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Downstream 1: Reward-guided generation -->
+    <h3 class="title is-4">Downstream Application 1: Reward-Guided Artifact-Free Generation</h3>
+    <div class="columns is-vcentered" style="margin-bottom: 3rem;">
+      <div class="column is-half">
+        <div class="content">
+          <p>
+            ArtiAgent's paired data design (clean vs. artifact-injected) provides ideal
+            supervision for a <strong>CLIP-based reward model</strong>. Combined with
+            test-time scaling on FLUX-schnell:
+          </p>
+          <ul>
+            <li>The artifact-preference reward improves steadily across search rounds.</li>
+            <li>Generated images show progressively clearer structures and fewer artifacts.</li>
+            <li>Demonstrates that artifact understanding can directly improve image generation.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="column is-half">
+        <figure class="figure-card">
+          <img src="./static/images/reward.pdf"
+               alt="Reward-guided artifact-free generation"
+               style="width: 100%; display: block;">
+        </figure>
+        <p class="has-text-centered figure-caption">
+          Reward-guided generation: the artifact-free preference score increases across rounds.
+        </p>
+      </div>
+    </div>
+
+    <!-- Downstream 2: Image Correction -->
+    <h3 class="title is-4">Downstream Application 2: VLM-Guided Artifact Correction</h3>
+    <div class="columns is-vcentered">
+      <div class="column is-half">
+        <figure class="figure-card">
+          <img src="./static/images/correction.pdf"
+               alt="VLM-guided artifact correction"
+               style="width: 100%; display: block;">
+        </figure>
+        <p class="has-text-centered figure-caption">
+          The ArtiAgent-trained VLM guides FLUX inpainting to correct artifact regions.
+        </p>
+      </div>
+      <div class="column is-half">
+        <div class="content">
+          <p>
+            An artifact-aware VLM (Qwen2.5-VL-7B fine-tuned on ArtiAgent data) powers
+            an <strong>iterative inpainting pipeline</strong>:
+          </p>
+          <ol>
+            <li>VLM detects and localizes the artifact region in the generated image.</li>
+            <li>FLUX inpainting synthesizes a corrected version of the artifact area.</li>
+            <li>VLM re-evaluates the corrected image and repeats until artifact-free.</li>
+          </ol>
+          <p>
+            The pipeline reliably locates and corrects structural artifacts with
+            natural, structurally consistent content.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ─── BibTeX ────────────────────────────────────────────────────────────── -->
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title is-3">BibTeX</h2>
+    <pre class="bibtex-block"><code>@inproceedings{park2026artiagent,
+  title     = {See and Fix the Flaws: Enabling VLMs and Diffusion Models
+               to Comprehend Visual Artifacts via Agentic Data Synthesis},
+  author    = {Park, Jaehyun and Ahn, Minyoung and Kim, Minkyu and
+               Lee, Jonghyun and Lee, Jae-Gil and Park, Dongmin},
+  booktitle = {Proceedings of the IEEE/CVF Conference on Computer
+               Vision and Pattern Recognition (CVPR)},
+  year      = {2026},
+}</code></pre>
+  </div>
+</section>
+
+<!-- ─── Footer ────────────────────────────────────────────────────────────── -->
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link" href="../../assets/pdf/artiagent.pdf" title="Paper PDF">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      &nbsp;
+      <a class="icon-link" href="https://github.com/krafton-ai/ArtiAgent" title="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content has-text-centered">
+          <p>
+            Website template from <a href="https://nerfies.github.io">Nerfies</a>,
+            licensed under
+            <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+              CC BY-SA 4.0</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

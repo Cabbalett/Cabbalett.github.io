@@ -32,8 +32,11 @@ ninja.data = [{
           section: "News",},{id: "news-i-have-officially-passed-the-master-s-oral-defense",
           title: 'I have officially passed the Master’s oral defense.',
           description: "",
-          section: "News",},{id: "news-my-paper-active-learning-for-continual-learning-keeping-the-past-alive-in-the-present-is-accepted-at-iclr-2025",
-          title: 'My paper Active Learning for Continual Learning: Keeping the Past Alive in the...',
+          section: "News",},{id: "news-our-paper-active-learning-for-continual-learning-keeping-the-past-alive-in-the-present-is-accepted-at-iclr-2025",
+          title: 'Our paper Active Learning for Continual Learning: Keeping the Past Alive in the...',
+          description: "",
+          section: "News",},{id: "news-our-paper-see-and-fix-the-flaws-enabling-vlms-and-diffusion-models-to-comprehend-visual-artifacts-via-agentic-data-synthesis-is-accepted-at-cvpr-2026",
+          title: 'Our paper See and Fix the Flaws: Enabling VLMs and Diffusion Models to...',
           description: "",
           section: "News",},{
         id: 'social-email',

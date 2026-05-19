@@ -35,6 +35,15 @@ ninja.data = [{
           section: "News",},{id: "news-our-paper-active-learning-for-continual-learning-keeping-the-past-alive-in-the-present-is-accepted-at-iclr-2025",
           title: 'Our paper Active Learning for Continual Learning: Keeping the Past Alive in the...',
           description: "",
+          section: "News",},{id: "news-i-am-starting-my-research-scientist-internship-at-krafton-ai",
+          title: 'I am starting my research scientist internship at Krafton AI.',
+          description: "",
+          section: "News",},{id: "news-i-am-starting-my-ph-d-program-at-data-mining-lab-kaist",
+          title: 'I am starting my Ph.D. Program at Data Mining Lab @ KAIST.',
+          description: "",
+          section: "News",},{id: "news-our-paper-random-is-hard-to-beat-active-selection-in-online-dpo-with-modern-llms-is-accepted-at-iclr-2026-workshop-icbinb",
+          title: 'Our paper Random Is Hard to Beat: Active Selection in online DPO with...',
+          description: "",
           section: "News",},{id: "news-our-paper-see-and-fix-the-flaws-enabling-vlms-and-diffusion-models-to-comprehend-visual-artifacts-via-agentic-data-synthesis-is-accepted-at-cvpr-2026",
           title: 'Our paper See and Fix the Flaws: Enabling VLMs and Diffusion Models to...',
           description: "",
@@ -43,7 +52,7 @@ ninja.data = [{
         title: 'email',
         section: 'Socials',
         handler: () => {
-          window.open("mailto:%6A%68%70%61%72%6B%38%31%33@%6B%61%69%73%74.%61%63.%6B%72", "_blank");
+          window.open("mailto:%6A%68.%70%61%72%6B@%6B%61%69%73%74.%61%63.%6B%72", "_blank");
         },
       },{
         id: 'social-linkedin',

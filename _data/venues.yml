@@ -11,5 +11,11 @@
 "ICLR":
   color: "#A1CD4B"
 
+"ICLRw":
+  color: "#A1CD4B"
+
 "NeurIPS":
   color: "#8C689F"
+
+"CVPR":
+  color: "#0E7FEC"

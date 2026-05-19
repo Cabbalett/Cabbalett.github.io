@@ -3,7 +3,7 @@
     "name": "Jaehyun Park",
     "label": "Deep Learning Researcher",
     "image": "",
-    "email": "jhpark813@kaist.ac.kr",
+    "email": "jh.park@kaist.ac.kr",
     "url": "https://cabbalett.github.io/",
     "summary": "A Ph.D. candidate in <a href=\"https://dm.kaist.ac.kr/\">Data Mining Lab</a> @ KAIST, specializing in data-efficient deep learning.",
     "location": {
@@ -26,7 +26,7 @@
       "institution": "Korea Advanced Institute of Science and Technology (KAIST)",
       "location": "South Korea",
       "url": "https://kaist.ac.kr/",
-      "area": "Electrical Engineering / Computer Science",
+      "area": "Electrical Engineering",
       "studyType": "B.S.",
       "startDate": "2018-03",
       "endDate": "2023-02",
@@ -41,6 +41,46 @@
       "startDate": "2023-03",
       "endDate": "2025-02",
       "score": "10"
+    },
+    {
+      "institution": "Korea Advanced Institute of Science and Technology (KAIST)",
+      "location": "South Korea",
+      "url": "https://kaist.ac.kr/",
+      "area": "Computer Science",
+      "studyType": "Ph.D.",
+      "startDate": "2025-03",
+      "endDate": "Present",
+      "score": "10"
+    }
+  ],
+  "publications": [
+    {
+      "name": "Random Is Hard to Beat: Active Selection in online DPO with Modern LLMs",
+      "publisher": "ICLR Workshop",
+      "releaseDate": "2026",
+      "url": "https://openreview.net/forum?id=mnLmmtW7HO",
+      "summary": "G. Oh, J. Lee, <b>J. Park</b>, Y. Yu, W. Bae<sup>*</sup>, J. Noh<sup>*</sup>"
+    },
+    {
+      "name": "See and Fix the Flaws: Enabling VLMs and Diffusion Models to Comprehend Visual Artifacts via Agentic Data Synthesis",
+      "publisher": "CVPR",
+      "releaseDate": "2026",
+      "url": "https://openreview.net/forum?id=mnLmmtW7HO",
+      "summary": "<b>J. Park</b>, M. Ahn, M. Kim, J. Lee, JG. Lee, D. Park<sup>*</sup>"
+    },
+    {
+      "name": "Active Learning for Continual Learning: Keeping the Past Alive in the Present",
+      "publisher": "ICLR",
+      "releaseDate": "2025",
+      "url": "https://openreview.net/forum?id=mnLmmtW7HO",
+      "summary": "<b>J. Park</b>, D. Park, JG. Lee<sup>*</sup>"
+    },
+    {
+      "name": "Exploiting Representation Curvature for Boundary Detection in Time Series",
+      "summary": "Y. Shin, <b>J. Park</b>, S. Yoon, B. Lee, JG. Lee<sup>*</sup>",
+      "publisher": "NeurIPS",
+      "releaseDate": "2024",
+      "url": "https://openreview.net/forum?id=WK2KxPAMQv"
     }
   ],
   "work": [
@@ -67,22 +107,6 @@
       "date": "2022",
       "awarder": "KAIST",
       "summary": "Individuals with outstanding academic performance, good conduct and exemplary behavior who have been recommended by the Head of the Department."
-    }
-  ],
-  "publications": [
-    {
-      "name": "Active Learning for Continual Learning: Keeping the Past Alive in the Present",
-      "publisher": "ICLR",
-      "releaseDate": "2025",
-      "url": "https://openreview.net/forum?id=mnLmmtW7HO",
-      "summary": "<b>J. Park</b>, D. Park, JG. Lee<sup>*</sup>"
-    },
-    {
-      "name": "Exploiting Representation Curvature for Boundary Detection in Time Series",
-      "summary": "Y. Shin, <b>J. Park</b>, S. Yoon, B. Lee, JG. Lee<sup>*</sup>",
-      "publisher": "NeurIPS",
-      "releaseDate": "2024",
-      "url": "https://openreview.net/forum?id=WK2KxPAMQv"
     }
   ],
   "languages": [

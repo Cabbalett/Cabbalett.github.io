@@ -4,6 +4,27 @@
 
 // Typography
 
+body {
+  font-family: $font-sans;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-serif;
+}
+
+code,
+pre,
+kbd,
+samp {
+  font-family: $font-mono;
+}
+
 p,
 h1,
 h2,
@@ -198,7 +219,7 @@ ul.task-list input[type="checkbox"] {
   .more-info {
     margin-bottom: 5px;
     margin-top: 5px;
-    font-family: monospace;
+    font-family: $font-mono;
 
     p {
       display: inline-block;

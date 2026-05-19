@@ -18,10 +18,10 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-I am a master's student in [Data Mining Lab](https://dm.kaist.ac.kr/) at KAIST, advised by Prof. [Jae-Gil Lee](https://www.kaistdmlab.org/jaegil).
+I am a PhD candidate in the [Data Mining Lab](https://dm.kaist.ac.kr/) at KAIST, advised by Prof. [Jae-Gil Lee](https://www.kaistdmlab.org/jaegil). My research interest is on data-centric AI for LLM post-training, studied along two axes: *how* we train on supervision so weak signals become useful learning, and *where* the supervision comes from (human, AI, or both).
 
-My research interests are concerned with data quality aspect of general deep learning, such as active learning, data selection, data curation, etc. I focus on investigating data properties that can improve the AI performance, which particular interest in curating datasets to guide models toward specific goals, such as implementing constraints to a model or achieving targeted outcomes. Additionally, I am interested in designing datasets that facilitate efficient and effective training of large-scale models, including both pre-training and fine-tuning stages.
+#### Post-training data is naturally weak supervision.
+We often describe LLMs as generative models, but in practice they predict the next token. For any prompt, infinite continuations may be valid, so any finite dataset shows only a subset of what “correct” is, making post-training data *weakly supervised*. My interest is in strengthening that weak signal by using what the model already knows.
 
-I received my bachelor's degree in Electrical Engineering and Computer Science(minor) at KAIST in 2023. Moreover, I have worked on *selecting informative data in continuous data shifts* during my master's program.
-
-I am looking forward to pursue research that leverages the generalization capabilities of foundation models to further improve the performance of already highly effective models.
+#### Where humans fit in a world of synthetic data.
+As synthetic data becomes more common, a key question remains: can we train LLMs without human input, and if not, where are humans still necessary? I’m interested in the differences between AI-generated and human supervision: the roles each plays, the mistakes each tends to make, and how each shapes model learning.
